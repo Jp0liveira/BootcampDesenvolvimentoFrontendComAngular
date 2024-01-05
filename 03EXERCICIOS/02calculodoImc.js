@@ -19,11 +19,11 @@ let alturaCm = 1.86;
 const IMC = (pesoKg / (alturaCm**2)).toPrecision(4) ;
 if (IMC < 18.5){
     console.log("Abaixo do Peso. IMC = " + IMC);
-}else if(IMC >= 18.5 && IMC <= 25){
+}else if(IMC >= 18.5 && IMC < 25){
     console.log("Peso normal. IMC = " + IMC);
-}else if(IMC >= 25 && IMC <= 30){
+}else if(IMC >= 25 && IMC < 30){
     console.log("Acima do peso. IMC = " + IMC);
-}else if(IMC >= 30 && IMC <= 40){
+}else if(IMC >= 30 && IMC < 40){
     console.log("Obeso. IMC = " + IMC);
 }else{
     console.log("Obesidade grave. IMC = " + IMC);
