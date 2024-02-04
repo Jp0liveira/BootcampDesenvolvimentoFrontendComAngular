@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+    margin: 10px;
+    width: 100%;
+}
+
+.card{
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    padding: 1px 1px 0 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    box-shadow: 8px 10px 13px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 10px 13px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 10px 13px -4px rgba(0,0,0,0.75);
+}
+
+.card__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.card__left > span{
+  padding-bottom: 10px; 
+}
+
+.card__right > img{
+    max-width: 20rem;
+    max-height: 20rem;
+    width: 100%;
+    height: 99%;
+}
