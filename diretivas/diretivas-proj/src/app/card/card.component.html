@@ -1,0 +1,34 @@
+<p *ngIf="true">card works!</p>
+<ul>
+  <li *ngFor="let produto of produtos; let i = index" (click)="alert(i)">{{produto}}</li>
+  <button (click)="adicionar()">Adiconar</button>
+</ul>
+<div [ngSwitch]="menuType">
+  <span *ngSwitchCase="'user'">
+    <ul>
+      <li>Editar perfil</li>
+      <li>Adicionar cartao</li>
+    </ul>
+  </span>
+  <span *ngSwitchCase="'admin'">]
+    <ul>
+      <li>Editar perfil</li>
+      <li>Adicionar cartao</li>
+      <li>Genciar usuarios</li>
+    </ul>
+  </span>
+  <span *ngSwitchCase="'superUser'">
+    <ul>
+      <li>Editar perfil</li>
+      <li>Adicionar cartao</li>
+      <li>Genciar usuarios</li>
+      <li>Gerenciar Admins</li>
+    </ul>
+  </span>
+  <span *ngSwitchDefault>
+    <ul>
+      <li>Editar perfil</li>
+      <li>Adicionar cartao</li>
+    </ul>
+  </span>
+</div>

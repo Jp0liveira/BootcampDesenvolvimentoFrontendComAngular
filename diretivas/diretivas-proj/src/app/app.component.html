@@ -1,0 +1,7 @@
+<router-outlet></router-outlet>
+<app-card *ngIf="true; else anotherBlock"></app-card>
+<ng-template #anotherBlock>
+  <p>Olá sou um bloco secreto</p>
+</ng-template>
+<app-compr-atributos></app-compr-atributos>
+
